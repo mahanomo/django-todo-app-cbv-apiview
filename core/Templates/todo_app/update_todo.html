@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Edit Todo</title></head>
+<body>
+  <h2>Edit your Todo</h2>
+  <form method="post">
+    {% csrf_token %}
+    <input type="hidden" name="user" value="{{user.id}}">
+    {{ form.task }}
+    <button type="submit">Save</button>
+  </form>
+  <a href="{% url 'todo_app:base-todo' %}">Cancel</a>
+</body>
+</html>

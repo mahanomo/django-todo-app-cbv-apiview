@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Confirm Delete</title>
+</head>
+<body>
+  <h2>Are you sure you want to delete this task?</h2>
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit">Yes, Delete</button>
+  </form>
+  <a href="{% url 'todo_app:base-todo' %}">Cancel</a>
+</body>
+</html>
