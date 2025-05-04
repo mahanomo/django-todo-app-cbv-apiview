@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'accounts',
     'todo_app',
     'rest_framework',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
